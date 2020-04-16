@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="left">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <img class="bg-mobile" src="images/hero-mobile.jpg" alt="bg-mobile" />
+        <h1 class="title">
+          <span class="we">We're</span> <br />
+          <span class="coming">coming</span> <br />
+          <span class="soon">soon</span>
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new <br />
+          fashion store. Add your email below to stay up-to-date with <br />
+          announcements and our launch deals.
+        </p>
+
+        <form id="form" novalidate>
+          <input id="email" type="email" placeholder="Email Address" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="error" />
+          <button>
+            <img src="./images/icon-arrow.svg" alt="arrow" />
+          </button>
+          <small>Please provide a valid email</small>
+        </form>
+      </section>
+      <section class="right bg-image"></section>
+    </div>
+    <script>
+      const form = document.getElementById("form");
+      const email = document.getElementById("email");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        onClick();
+      });
+
+      function onClick() {
+        const emailVal = email.value;
+        if (validateEmail(emailVal)) {
+          form.classList.remove("error");
+        } else {
+          form.classList.add("error");
+        }
+      }
+
+      function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+      }
+    </script>
+  </body>
+</html>
