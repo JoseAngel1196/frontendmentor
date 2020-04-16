@@ -6,22 +6,32 @@ body {
   font-family: "Josefin Sans", sans-serif;
   background-image: url(images/bg-pattern-desktop.svg);
   margin: 0;
+  padding: 0;
 }
 
 .container {
   display: flex;
   justify-content: space-around;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 1px solid blue;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 40px 170px;
+  width: 60%;
 }
 
 .right {
+  margin: 0;
+  padding: 0;
   width: 40%;
+  border: 1px solid red;
 }
 
 .we {
@@ -70,7 +80,7 @@ p {
 form {
   margin-top: 15px;
   position: relative;
-  width: 100%;
+  width: 445px;
 }
 
 input {
@@ -138,6 +148,14 @@ form.error small {
   display: block;
 }
 
+@media screen and (max-width: 1050px) {
+  form {
+    margin-top: 15px;
+    position: relative;
+    width: 310px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .container {
     display: flex;
@@ -148,6 +166,7 @@ form.error small {
     align-items: center;
     width: 100%;
     margin-bottom: 15px;
+    padding: 0;
   }
 
   .logo {
