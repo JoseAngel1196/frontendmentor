@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 790px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+}
+
+.left-title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  width: 385px;
+}
+
+.left-span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  width: 385px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  width: 680px;
+}
+
+.right-div {
+  position: absolute;
+  top: 115px;
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 542px;
+  text-align: center;
+}
+
+.right-span {
+  font-size: 12px;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 0.2em;
+  padding: 30px;
+  width: 540px;
+  margin-top: 50px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin: 10px 0;
+  padding: 19px;
+  border: 1px solid #aaa;
+  border-radius: 0.2em;
+  outline: none;
+  font-size: inherit;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600px;
+  width: 100%;
+}
+
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5em;
+  height: 52px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-left: -50px;
+}
+
+.right-second-span {
+  margin-top: 19px;
+  color: hsl(246, 25%, 77%);
+  font-size: 8px;
+  text-align: center;
+}
+
+.right-third-span {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.break {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(images/bg-intro-mobile.png);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .right {
+    margin: 0;
+    width: 100%;
+  }
+
+  .left-title {
+    margin-top: 35px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-span {
+    text-align: center;
+    width: 327px;
+    font-size: 14px;
+  }
+
+  .right-div {
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+  }
+
+  form {
+    width: 320px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+  }
+
+  .break {
+    display: block;
+  }
+}
