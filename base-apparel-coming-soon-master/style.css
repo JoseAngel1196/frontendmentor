@@ -16,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  border: 1px solid blue;
 }
 
 .left {
@@ -31,7 +30,6 @@ body {
   margin: 0;
   padding: 0;
   width: 40%;
-  border: 1px solid red;
 }
 
 .we {
