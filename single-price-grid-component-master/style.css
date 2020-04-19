@@ -41,7 +41,7 @@ header {
 .header-title {
   color: hsl(179, 62%, 43%);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
 }
@@ -59,6 +59,7 @@ header {
   font-size: 14px;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 .nested {
@@ -88,7 +89,6 @@ header {
 
 .left-paragraph {
   font-size: 14px;
-  color: hsl(179, 43%, 75%);
 }
 
 .left-btn {
@@ -116,7 +116,6 @@ header {
 .right-paragraph {
   align-items: center;
   font-size: 14px;
-  color: hsl(179, 43%, 75%);
   line-height: 1.3;
 }
 
