@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "nested nested nested";
+  max-width: 635px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+header {
+  grid-area: header;
+  background-color: #fff;
+  padding: 0 42px;
+  height: 216px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header-title {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-span {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.header-paragraph {
+  color: gray;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.nested {
+  grid-area: nested;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 257px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+  background-color: hsl(179, 62%, 43%);
+  padding: 38px;
+}
+
+.left-span-dollar {
+  font-size: 30px;
+}
+
+.left-span-text {
+  color: hsl(179, 43%, 75%);
+  font-size: 14px;
+}
+
+.left-paragraph {
+  font-size: 14px;
+  color: hsl(179, 43%, 75%);
+}
+
+.left-btn {
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid hsl(0, 0%, 70%);
+  color: #fff;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: 1em 1em;
+  border-radius: 0.3em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 38px;
+  background-color: hsl(179, 47%, 52%);
+  color: #fff;
+}
+
+.right-paragraph {
+  align-items: center;
+  font-size: 14px;
+  color: hsl(179, 43%, 75%);
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 750px) {
+  .parent {
+    height: 800px;
+    position: relative;
+  }
+  .grid-container {
+    position: absolute;
+    top: 85px;
+    width: 375px;
+    overflow: unset;
+  }
+  .nested {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    justify-content: space-around;
+  }
+
+  .left h3,
+  .left-span,
+  .left-paragraph,
+  .right h3 {
+    margin-bottom: 15px;
+  }
+}
