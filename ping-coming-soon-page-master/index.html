@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="images/logo.svg" alt="Logo" />
+        <h1 class="header-title">
+          We are launching <span class="header-span">soon!</span>
+        </h1>
+        <p class="header-paragraph">Subscribe and get notified</p>
+        <form id="form" novalidate>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Your email address..."
+          />
+          <small>Error</small>
+          <button type="submit">
+            Notify Me
+          </button>
+        </form>
+      </header>
+      <main class="main">
+        <img
+          class="illustration-dashboard"
+          src="images/illustration-dashboard.png"
+          alt="Illuastration Dashboard"
+        />
+      </main>
+      <footer class="footer">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/JustCallMeJochi" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
