@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  background-position-x: 40%;
+  background-position-y: center;
+  background-color: hsl(257, 40%, 49%);
+  height: 100vh;
+}
+
+.container {
+  max-width: 1058px;
+  margin: 0 auto;
+}
+
+#logo {
+  width: 210px;
+  height: 100px;
+}
+
+main {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main > div:first-child {
+  margin: 0 auto;
+}
+
+figure img {
+  max-width: 600px;
+}
+
+main > div:last-child {
+  padding: 30px;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+p {
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  border: 1px solid hsl(0, 0%, 70%);
+  outline: none;
+  cursor: pointer;
+  padding: 0.9em 4em;
+  border-radius: 1.5em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > div:last-child,
+  figure {
+    text-align: center;
+  }
+
+  figure img {
+    width: 400px;
+  }
+
+  footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
