@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.15em;
+  margin: 0;
+}
+
+.container {
+  background-image: url(images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2em 1em;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+}
+
+#chatr-logo {
+  max-width: 250px;
+}
+
+nav {
+  margin: 2em auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav {
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0.5;
+}
+
+nav ul li {
+  background-color: #fff;
+  border-radius: 1.5em;
+  padding: 13px 59px;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.community > h1 {
+  font-size: 2rem;
+  color: hsl(192, 95%, 7%);
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.community > p {
+  opacity: 0.6;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.community > button {
+  outline: none;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 1.8em;
+  cursor: pointer;
+  padding: 1.3em 3.5em;
+  color: #fff;
+  width: 270px;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 15px auto;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  margin: 3em auto 0;
+  width: 300px;
+}
+
+.sections > div {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+  margin: 40px 64px;
+  max-width: 600px;
+  padding: 60px;
+}
+
+.sections > div > img {
+  max-width: 100%;
+}
+
+.sections > div > h3,
+.sections > div > p {
+  text-align: center;
+}
+
+.sections > div > p {
+  opacity: 0.6;
+}
+
+.community-section {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 0 40px;
+  padding: 30px;
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+
+.community-section > h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(192, 95%, 7%);
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.community-section > button {
+  outline: none;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 1.8em;
+  cursor: pointer;
+  padding: 1.3em 3.5em;
+  color: #fff;
+  width: 270px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer {
+  border: 1px solid blue;
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+}
+
+.footer-container > ul > li {
+  list-style: none;
+  margin: 30px 0;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+footer > p {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  #chatr-logo {
+    width: 150px;
+  }
+
+  nav ul li {
+    background-color: #fff;
+    border-radius: 1.5em;
+    padding: 13px 45px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+    padding: 0.5;
+  }
+
+  nav ul li {
+    background-color: #fff;
+    border-radius: 1.5em;
+    padding: 13px 59px;
+  }
+
+  main {
+    flex-flow: row;
+  }
+
+  figure img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sections {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections > div {
+    display: flex;
+
+    max-width: 100%;
+  }
+
+  .sections > div:first-child,
+  .sections > div:last-child {
+    flex-direction: row-reverse;
+  }
+
+  .sections > div > img {
+    max-width: 300px;
+  }
+
+  .sections > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sections > div > div > h3,
+  .sections > div > div > p {
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .community-section {
+    max-width: 600px;
+    margin: 0 auto;
+    bottom: -20px;
+  }
+
+  .footer-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  footer > p {
+    margin-right: 15px;
+    text-align: right;
+  }
+}
