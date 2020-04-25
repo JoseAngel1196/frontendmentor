@@ -302,6 +302,10 @@ section > h2 {
 }
 
 @media screen and (max-width: 800px) {
+  .container {
+    margin-bottom: 15px;
+  }
+
   .hr {
     display: block;
     color: #000;
