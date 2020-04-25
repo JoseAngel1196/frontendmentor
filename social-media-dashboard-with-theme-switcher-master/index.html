@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="heading">
+          <h3>
+            Social Media Dashboard
+            <span>Total Followers: 23,004</span>
+          </h3>
+        </div>
+        <hr class="hr">
+        <div class="toggle">
+          <span>Dark Mode</span>
+          <label class="switch">
+            <input id="switch" name="switch" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </header>
+      <main>
+        <div class="card center card-facebook">
+          <div class="card-header">
+            <i class="fab fa-facebook-square facebook"></i>
+            <span>@nathanf</span>
+          </div>
+          <div class="card-body">
+            <span>1987</span>
+            <p>Followers</p>
+          </div>
+          <div class="card-footer">
+            <img class="icon-up" src="images/icon-up.svg" alt="Up" />
+            <span>12 Today</span>
+          </div>
+        </div>
+        <div class="card center card-twitter">
+          <div class="card-header">
+            <i class="fab fa-twitter twitter"></i>
+            <span>@nathanf</span>
+          </div>
+          <div class="card-body">
+            <span>1044</span>
+            <p>Followers</p>
+          </div>
+          <div class="card-footer">
+            <img class="icon-up" src="images/icon-up.svg" alt="Up" />
+            <span>99 Today</span>
+          </div>
+        </div>
+        <div class="card center card-instagram">
+          <div class="card-header">
+            <i class="fab fa-instagram instagram"></i>
+            <span>@realnathanf</span>
+          </div>
+          <div class="card-body">
+            <span>11k</span>
+            <p>Followers</p>
+          </div>
+          <div class="card-footer">
+            <img class="icon-up" src="images/icon-up.svg" alt="Up" />
+            <span>1099 Today</span>
+          </div>
+        </div>
+        <div class="card center card-youtube">
+          <div class="card-header">
+            <i class="fab fa-youtube youtube"></i> <span>Nathan F.</span>
+          </div>
+          <div class="card-body">
+            <span>8239</span>
+            <p>Subscribers</p>
+          </div>
+          <div class="card-footer">
+            <img src="images/icon-down.svg" alt="Down" />
+            <span>144 Today</span>
+          </div>
+        </div>
+      </main>
+      <section>
+        <h2>Overview - Today</h2>
+        <div class="section-parent">
+          <div class="section">
+            <div class="section-header">
+              <span>Page Views</span>
+              <i class="fab fa-facebook-square facebook"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">87</span>
+              <span class="indicator">
+                <img src="images/icon-up.svg" alt="Up" /> 3%</span
+              >
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-header">
+              <span>Likes</span>
+              <i class="fab fa-facebook-square facebook"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">52</span>
+              <span class="indicator indicator-red"
+                ><img src="images/icon-down.svg" alt="Down" /> 2%</span
+              >
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-header">
+              <span>Likes</span>
+              <i class="fab fa-instagram instagram"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">5462</span>
+              <span class="indicator"
+                ><img src="images/icon-up.svg" alt="Up" /> 2257%</span
+              >
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-header">
+              <span>Profile Views</span>
+              <i class="fab fa-instagram instagram"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">52k</span>
+              <span class="indicator"
+                ><img src="images/icon-up.svg" alt="Up" /> 1375%</span
+              >
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-header">
+              <span>Retweets</span>
+              <i class="fab fa-twitter twitter"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">117</span>
+              <span class="indicator"
+                ><img src="images/icon-up.svg" alt="Up" /> 303%</span
+              >
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-header">
+              <span>Likes</span>
+              <i class="fab fa-twitter twitter"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">507</span>
+              <span class="indicator"
+                ><img src="images/icon-up.svg" alt="Up" /> 553%</span
+              >
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-header">
+              <span>Likes</span> <i class="fab fa-youtube youtube"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">107</span>
+              <span class="indicator indicator-red"
+                ><img src="images/icon-down.svg" alt="Down" /> 19%</span
+              >
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-header">
+              <span>Total Views</span><i class="fab fa-youtube youtube"></i>
+            </div>
+            <div class="section-body">
+              <span class="number">1407</span>
+              <span class="indicator indicator-red"
+                ><img src="images/icon-down.svg" alt="Down" /> 12%</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const checkbox = document.querySelector('input[name="switch"]');
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          trans();
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      });
+
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 1000);
+      };
+    </script>
+  </body>
+</html>
