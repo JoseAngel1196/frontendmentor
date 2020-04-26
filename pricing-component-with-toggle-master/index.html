@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Pricing Component With Toggle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-image">
+      <header>
+        <h2>Our Pricing</h2>
+        <div class="toggle-container">
+          <span class="annually">Annually</span>
+          <label class="switch"
+            ><input id="price" name="price" type="checkbox" />
+            <div></div>
+          </label>
+          <span class="monthly">Monthly</span>
+        </div>
+      </header>
+
+      <div class="cards-wrapper">
+        <div class="card-pricing">
+          <h2>Basic</h2>
+          <p class="price-tag"><strong>&dollar;199.99</strong></p>
+          <ul class="price-detail">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button class="btn btn-purple">Learn More</button>
+        </div>
+        <div class="card-pricing increase">
+          <h2>Professional</h2>
+          <p class="price-tag">
+            <strong>
+              &dollar;249.99
+            </strong>
+          </p>
+          <ul class="price-detail">
+            <li>1 TB Storage</li>
+            <li>
+              5 Users Allowed
+            </li>
+            <li>
+              Send up to 10 GB
+            </li>
+          </ul>
+          <button class="btn btn-white">Learn More</button>
+        </div>
+        <div class="card-pricing">
+          <h2>Master</h2>
+          <p class="price-tag">
+            <strong>
+              &dollar;399.99
+            </strong>
+          </p>
+          <ul class="price-detail">
+            <li>2 TB Storage</li>
+            <li>
+              10 Users Allowed
+            </li>
+            <li>
+              Send up to 20 GB
+            </li>
+          </ul>
+          <button class="btn btn-purple">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <script src="app.js"></script>
+  </body>
+</html>
