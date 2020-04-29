@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+h2 {
+  color: var(--dark-grayish-blue);
+}
+
+header {
+  text-align: center;
+  padding: 0 1.3em;
+}
+
+.bg-header {
+  background-image: url(images/bg-header-mobile.png);
+  background-size: cover;
+}
+
+header img {
+  margin-top: 100px;
+}
+
+header div h2 {
+  padding: 0;
+  margin: 0;
+  margin-top: 1.3em;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+header div p {
+  line-height: 1.5em;
+}
+
+header div > div button:first-child {
+  display: block;
+}
+
+header div div button {
+  margin: 0 auto;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 1.3em 0;
+  border-radius: 1.5em;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-family: inherit;
+  max-width: 300px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.green {
+  background: var(--strong-cyan);
+}
+
+.purple {
+  background: var(--light-blue);
+}
+
+main {
+  text-align: center;
+  padding: 0 1.4em;
+}
+
+main div:nth-child(2) img {
+  width: 300px;
+}
+
+.middle-section {
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 1.4em;
+}
+
+.middle-section img {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.icons-grid {
+  margin-top: 60px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 1.4em;
+}
+
+.logos {
+  margin: 80px 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+  padding: 0 1.4em;
+}
+
+.logos li {
+  text-align: center;
+}
+
+.clipboard {
+  text-align: center;
+  padding: 0 1.4em;
+  margin: 80px 0;
+}
+
+.clipboard p {
+  line-height: 1.8em;
+}
+
+.space {
+  margin-bottom: 1em;
+}
+
+footer {
+  background: hsl(0, 0%, 93%);
+  text-align: center;
+  padding-bottom: 1.3em;
+}
+
+footer > img {
+  margin-top: 30px;
+  width: 50px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  color: hsl(210, 10%, 33%);
+  font-family: inherit;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li {
+  cursor: pointer;
+  padding: 0 0.8em;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .bg-header {
+    background-image: url(images/bg-header-desktop.png);
+  }
+
+  header div {
+    margin: 0 auto;
+  }
+
+  header div p {
+    font-size: 0.8em;
+    width: 60%;
+    margin: 30px auto;
+    margin-top: 15px;
+  }
+
+  header div div > button:first-child {
+    display: initial;
+    margin-bottom: 0;
+  }
+
+  header div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+  }
+
+  main {
+    padding-top: 3.5em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main div:first-child {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  main div:first-child p {
+    font-size: 0.8em;
+  }
+
+  main div:nth-child(2) {
+    display: flex;
+  }
+
+  main div:nth-child(2) img {
+    width: 800px;
+  }
+
+  main div:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+
+  main div:nth-child(2) div h2 {
+    margin: 0;
+  }
+
+  main div:nth-child(2) div p {
+    padding: 0;
+    text-align: left;
+    font-size: 0.8em;
+    width: 80%;
+  }
+
+  .middle-section p {
+    font-size: 0.8em;
+  }
+
+  .decrease {
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  .middle-section img {
+    width: 800px;
+  }
+
+  .icons-grid,
+  .logos {
+    gap: initial;
+    padding: 0 2.8em;
+  }
+
+  .icons-grid div p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logos {
+    margin-top: 200px;
+  }
+
+  .clipboard p {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .clipboard div {
+    margin-top: 50px;
+  }
+
+  .clipboard div button:first-child {
+    display: initial;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1.9em 1.8em;
+    text-align: initial;
+  }
+}
