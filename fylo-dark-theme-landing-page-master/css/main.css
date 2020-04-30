@@ -37,6 +37,7 @@ ul {
 header {
   background-color: #1c2431;
   background-image: url("../images/bg-curvy-mobile.svg");
+  background-size: cover;
   font-family: "Raleway", sans-serif;
   padding: 1.3em 1.8em;
 }
