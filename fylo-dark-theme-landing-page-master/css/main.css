@@ -367,8 +367,17 @@ footer ul li a.circle {
     width: 650px;
   }
   header div.hero-section div {
-    width: 30%;
+    width: 45%;
     margin: 0 auto;
+  }
+  header div.hero-section div p {
+    font-size: 0.8em;
+    width: 80%;
+    margin: 0 auto;
+  }
+  header div.hero-section div button {
+    width: 40%;
+    padding: 0.8em 1.3em;
   }
   main {
     -ms-grid-columns: (400px)[2];
@@ -380,6 +389,9 @@ footer ul li a.circle {
         -ms-flex-align: center;
             align-items: center;
     gap: 3.5em;
+  }
+  main div p {
+    font-size: 0.8em;
   }
   .stay-productive {
     display: -webkit-box;
@@ -399,6 +411,9 @@ footer ul li a.circle {
   }
   .stay-productive div h2 {
     font-size: 2.2em;
+  }
+  .stay-productive div p {
+    font-size: 0.8em;
   }
   .testimonials {
     margin-top: 2em;
@@ -438,7 +453,10 @@ footer ul li a.circle {
   footer #logo {
     position: absolute;
     top: 100px;
-    left: 180px;
+    left: 110px;
+  }
+  footer ul {
+    font-size: 0.8em;
   }
   footer ul:nth-child(2) {
     margin: 0;

@@ -352,8 +352,18 @@ footer {
       }
 
       div {
-        width: 30%;
+        width: 45%;
         margin: 0 auto;
+
+        p {
+          font-size: 0.8em;
+          width: 80%;
+          margin: 0 auto;
+        }
+        button {
+          width: 40%;
+          padding: 0.8em 1.3em;
+        }
       }
     }
   }
@@ -363,6 +373,12 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 3.5em;
+
+    div {
+      p {
+        font-size: 0.8em;
+      }
+    }
   }
 
   .stay-productive {
@@ -380,6 +396,10 @@ footer {
 
       h2 {
         font-size: 2.2em;
+      }
+
+      p {
+        font-size: 0.8em;
       }
     }
   }
@@ -419,10 +439,11 @@ footer {
     #logo {
       position: absolute;
       top: 100px;
-      left: 180px;
+      left: 110px;
     }
 
     ul {
+      font-size: 0.8em;
       &:nth-child(2) {
         margin: 0;
         width: 20%;
