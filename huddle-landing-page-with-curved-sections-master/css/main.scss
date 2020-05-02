@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+$pink: hsl(322, 100%, 66%);
+$very-pale-cyan: hsl(192, 100%, 9%);
+$very-pale-blue: hsl(207, 100%, 98%);
+$poppins: "Poppins", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1.3em 1.5em;
+
+  div.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 100px;
+      width: 100px;
+    }
+
+    button {
+      background-color: #fff;
+      color: $pink;
+      border: 1px solid $pink;
+      padding: 0.3em 1.3em;
+      border-radius: 1.3em;
+      cursor: pointer;
+    }
+  }
+
+  .hero {
+    padding-top: 2.5em;
+    text-align: center;
+
+    h2 {
+      font-family: $poppins;
+      font-size: 1.8em;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      color: white;
+      background-color: $pink;
+      padding: 0.8em 2.5em;
+      border-radius: 1.3em;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 0px 3px rgba(0, 0, 0, 0.23);
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    img {
+      margin-top: 5em;
+      width: 350px;
+    }
+  }
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5.5em;
+  padding: 5.5em 1.5em;
+
+  div {
+    text-align: center;
+
+    &:first-child {
+      h1 {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: "";
+          background-image: url("../images/icon-communities.svg");
+          background-size: cover;
+          top: -18px;
+          left: 95px;
+          height: 25px;
+          width: 30px;
+          padding: 0;
+        }
+      }
+    }
+
+    &:last-child {
+      h1 {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: "";
+          background-image: url("../images/icon-messages.svg");
+          background-size: cover;
+          top: -18px;
+          left: 95px;
+          height: 25px;
+          width: 35px;
+        }
+      }
+    }
+
+    h1 {
+      font-family: $poppins;
+      font-size: 3.8em;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.sections {
+  text-align: center;
+  padding: 2.5em 1.5em;
+
+  div {
+    margin-bottom: 2.5em;
+    img {
+      width: 350px;
+    }
+
+    div {
+      padding-top: 2em;
+
+      h2 {
+        font-family: $poppins;
+      }
+    }
+  }
+}
+
+.ready-community {
+  padding: 2.5em 1.5em;
+  text-align: center;
+
+  h2 {
+    font-family: $poppins;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: $pink;
+    padding: 0.8em 2.5em;
+    border-radius: 1.3em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 0px 3px rgba(0, 0, 0, 0.23);
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 1.5em 1.5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    &:first-child {
+      order: 2;
+      img {
+        width: 200px;
+      }
+
+      p {
+        line-height: 1.5em;
+      }
+
+      ul.social-icons {
+        padding: 1.3em 0;
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+          a {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            height: 40px;
+            width: 40px;
+            text-decoration: none;
+          }
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        .phone {
+          position: relative;
+          padding-left: 1.4em;
+
+          &:before {
+            content: "";
+            background-image: url("../images/icon-phone.svg");
+            background-size: cover;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            height: 15px;
+            width: 15px;
+          }
+        }
+
+        .email {
+          position: relative;
+          padding-left: 1.4em;
+
+          &:before {
+            content: "";
+            background-image: url("../images/icon-email.svg");
+            background-size: cover;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            height: 15px;
+            width: 20px;
+          }
+        }
+
+        li {
+          padding: 0.3em 0;
+        }
+      }
+    }
+
+    &:last-child {
+      order: 1;
+      margin-bottom: 1.5em;
+
+      .newsletter {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        font-weight: 600;
+      }
+
+      .tips {
+        line-height: 1.7em;
+        font-size: 1em;
+      }
+
+      div {
+        text-align: right;
+
+        input {
+          border: none;
+          outline: none;
+          display: block;
+          width: 100%;
+          padding: 0.8em 0;
+          border-radius: 0.4em;
+          font-family: inherit;
+          font-size: inherit;
+          margin-bottom: 0.8em;
+        }
+
+        .input:focus {
+          border-color: #fff;
+          box-shadow: 0 0 5px 0 #fff;
+        }
+
+        .subscribe {
+          border: 1px solid red;
+          outline: none;
+          border: none;
+          color: white;
+          background-color: $pink;
+          padding: 0.8em 2.8em;
+          border-radius: 0.8em;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19),
+            0 0px 3px rgba(0, 0, 0, 0.23);
+          font-family: inherit;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1022px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 1.5em 2.5em;
+
+    div.top-header {
+      img {
+        width: initial;
+      }
+
+      button {
+        padding: 0.5em 1.9em;
+      }
+    }
+
+    div.hero {
+      p {
+        font-size: 1em;
+        margin: 0 auto;
+        margin-bottom: 1.4em;
+        width: 50%;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 1em 3em;
+      }
+
+      img {
+        width: initial;
+      }
+    }
+  }
+
+  .statistics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: initial;
+
+    div {
+      &:first-child {
+        h1 {
+          &::before {
+            top: -10px;
+            left: 255px;
+          }
+        }
+      }
+
+      &:last-child {
+        h1 {
+          &::before {
+            top: -10px;
+            left: 255px;
+          }
+        }
+      }
+    }
+  }
+
+  .sections {
+    div {
+      max-width: 1050px;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5em 1.5em;
+      margin: 0 auto;
+      margin-bottom: 60px;
+
+      img {
+        width: 500px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        h2 {
+          font-size: 1.5em;
+          margin-bottom: 1em;
+        }
+
+        p {
+          text-align: left;
+          display: block;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      &:first-child {
+        padding: 1.5em 2.5em;
+        p {
+          width: 50%;
+        }
+
+        .social-icons {
+          padding: 0;
+        }
+      }
+
+      &:last-child {
+        .newsletter {
+          margin: 0;
+        }
+        .tips {
+          width: 55%;
+        }
+
+        div {
+          display: flex;
+
+          input {
+            width: 40%;
+          }
+
+          .subscribe {
+            margin-left: 25px;
+            padding: 0 2.8em;
+            height: 53.6px;
+          }
+        }
+      }
+    }
+  }
+}
