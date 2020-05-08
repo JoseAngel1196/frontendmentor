@@ -1,0 +1,168 @@
+@import "./fonts.scss", "./colors.scss", "./globalStyle.scss";
+
+$mobile: 1022px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+.container {
+  padding: 2.5em 1.8em;
+
+  .card {
+    display: flex;
+    align-items: center;
+    border-radius: 0.4em;
+
+    position: relative;
+    margin: 0 auto;
+    padding: 1.3em 1.5em;
+    background-color: white;
+    max-width: 800px;
+    width: 70%;
+    box-shadow: 0 10px 20px #c4dede, 0 6px 6px #c4dede;
+    border-left: 5px solid $desaturated-dark-cyan;
+    margin-bottom: 1.3em;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+      padding: 0.5em 0.3em;
+      margin-bottom: 2.3em;
+
+      img {
+        position: absolute;
+        top: -30px;
+        width: 50px;
+      }
+
+      div {
+        margin-top: 1.3em;
+        font-size: 0.8em;
+        position: relative;
+        width: 100%;
+
+        &:after {
+          content: "";
+          position: absolute;
+          background-color: $dark-grayish-cyan;
+          width: 100%;
+          height: 1px;
+          opacity: 0.8;
+          bottom: 0;
+        }
+      }
+    }
+
+    .company {
+      color: $desaturated-dark-cyan;
+      font-weight: 700;
+      font-size: 0.8em;
+    }
+
+    .new {
+      color: white;
+      background-color: $desaturated-dark-cyan;
+      padding: 0.5em 0.8em;
+      text-transform: uppercase;
+      border-radius: 1.2em;
+      font-size: 0.7em;
+    }
+
+    .featured {
+      color: #fff;
+      background-color: $very-dark-grayish-cyan;
+      padding: 0.5em 0.8em;
+      text-transform: uppercase;
+      border-radius: 1.2em;
+      font-size: 0.7em;
+    }
+
+    .position {
+      padding-left: 1em;
+      color: $very-dark-grayish-cyan;
+      font-weight: 700;
+
+      @include mobile {
+        padding-left: 0.8em;
+      }
+    }
+
+    .requirements {
+      color: $dark-grayish-cyan;
+      opacity: 0.8;
+      font-size: 0.8em;
+
+      @include mobile {
+        margin-bottom: 1.3em;
+      }
+
+      li {
+        position: relative;
+        margin-right: 15px;
+
+        &:first-child {
+          &:before {
+            display: none;
+          }
+        }
+
+        &:before {
+          content: "";
+          background-color: $dark-grayish-cyan;
+          position: absolute;
+          left: -15px;
+          bottom: 8px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          opacity: 0.8;
+
+          @include mobile {
+            width: 4px;
+            height: 4px;
+            bottom: 4px;
+          }
+        }
+      }
+    }
+
+    .roles {
+      margin-left: auto;
+      cursor: pointer;
+
+      li {
+        font-weight: 700;
+        color: $desaturated-dark-cyan;
+        background-color: $light-grayish-cyan-bg;
+        padding: 0.5em 0.5em;
+        font-size: 0.8em;
+      }
+
+      @include mobile {
+        margin: initial;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+    }
+
+    .languages {
+      cursor: pointer;
+
+      li {
+        font-weight: 700;
+        color: $desaturated-dark-cyan;
+        background-color: $light-grayish-cyan-bg;
+        padding: 0.5em 0.5em;
+        font-size: 0.8em;
+      }
+
+      @include mobile {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

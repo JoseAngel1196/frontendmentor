@@ -1,0 +1,144 @@
+@import "fonts.scss", "globalStyle.scss", "colors.scss";
+
+$mobile: 1022px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+.filter {
+  position: relative;
+  top: -25px;
+  background: #fff;
+  margin: 0 0.3em;
+  box-shadow: 0 10px 20px #c4dede, 0 6px 6px #c4dede;
+  max-width: 800px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.5em;
+  border-radius: 0.4em;
+
+  position: relative;
+  top: -25px;
+  background: #fff;
+  box-shadow: 0 10px 20px #c4dede, 0 6px 6px #c4dede;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.5em;
+  border-radius: 0.4em;
+
+  margin-left: 365px;
+  margin-right: 365px;
+
+  .filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .clear {
+    outline: none;
+    border: none;
+    background-color: white;
+    color: $dark-grayish-cyan;
+    font-weight: 700;
+    font-size: medium;
+    cursor: pointer;
+  }
+
+  .item {
+    padding: 0.5em;
+
+    span {
+      color: $desaturated-dark-cyan;
+      background-color: $light-grayish-cyan-bg;
+      font-weight: 700;
+      padding: 0.4em 0.5em;
+      border-top-left-radius: 0.4em;
+      border-bottom-left-radius: 0.4em;
+      position: relative;
+
+      p {
+        display: inline-block;
+      }
+    }
+
+    button {
+      border-top-right-radius: 0.4em;
+      border-bottom-right-radius: 0.4em;
+      padding: 0.4em 0.5em;
+      border: none;
+      color: #fff;
+      background-color: $desaturated-dark-cyan;
+      font-family: inherit;
+      font-weight: 700;
+    }
+  }
+
+  @include mobile {
+    position: relative;
+    top: -25px;
+    background: #fff;
+    margin: 0 0.3em;
+    box-shadow: 0 10px 20px #c4dede, 0 6px 6px #c4dede;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 0.5em;
+    border-radius: 0.4em;
+
+    .filters {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .clear {
+      outline: none;
+      border: none;
+      background-color: white;
+      color: $dark-grayish-cyan;
+      font-weight: 700;
+      font-size: medium;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .item {
+      padding: 0 0.5em;
+      margin: 0.5em 0;
+
+      span {
+        color: $desaturated-dark-cyan;
+        background-color: $light-grayish-cyan-bg;
+        font-weight: 700;
+        padding: 0.4em 0.5em;
+        border-top-left-radius: 0.4em;
+        border-bottom-left-radius: 0.4em;
+        position: relative;
+
+        p {
+          display: inline-block;
+        }
+      }
+
+      button {
+        border-top-right-radius: 0.4em;
+        border-bottom-right-radius: 0.4em;
+        padding: 0.4em 0.5em;
+        border: none;
+        color: #fff;
+        background-color: $desaturated-dark-cyan;
+        font-family: inherit;
+        font-weight: 700;
+      }
+    }
+  }
+}

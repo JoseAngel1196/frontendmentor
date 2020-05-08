@@ -1,0 +1,20 @@
+@import "colors.scss", "fonts.scss", "globalStyle.scss";
+
+$mobile: 1022px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+.bg-header {
+  height: 158px;
+  background-color: $desaturated-dark-cyan;
+  background-image: url("../assets/images/bg-header-desktop.svg");
+  background-size: cover;
+
+  @include mobile {
+    background-image: url("../assets/images/bg-header-mobile.svg");
+  }
+}
